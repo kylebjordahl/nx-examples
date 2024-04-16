@@ -1,0 +1,11 @@
+{
+    "name":"env-printer",
+    "targets": {
+        "print":{
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "env | grep ENV_PRINTER_"
+            }
+        }
+    }
+}
