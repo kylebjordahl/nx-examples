@@ -5,6 +5,12 @@
   "projectType": "application",
   "generators": {},
   "targets": {
+    "check-env":{
+      "command": "env | grep FOO",
+      "configurations": {
+        "test":{}
+      }
+    },
     "build": {
       "executor": "@nx/webpack:webpack",
       "options": {
